@@ -17,7 +17,6 @@ function Search() {
     API.searchEmps()
       .then(res => {
         setEmployees(res.data.results)
-        console.log(employees)
       })
       .catch(err => console.log(err));
   }
@@ -25,8 +24,8 @@ function Search() {
   return (
       <div>
         <Container style={{ minHeight: "100vh" }}>
-          {/* <List name={employees[0].name}>
-          </List> */}
+          <List dataRows={employees}>
+          </List>
         </Container>
       </div>
   );

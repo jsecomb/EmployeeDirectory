@@ -3,13 +3,14 @@ import "./style.css";
 
 // This file exports both the List and ListItem components
 
-function List({ name }) {
-  console.log(name)
-  return <ul className="list-group">
-  (
-    <li>word</li>
-  )
+function List({ dataRows }) {
+  return( 
+  <ul>
+    {dataRows.map(emp => (
+    <li>{emp.gender}</li>
+    ))}
   </ul>
+  )
 }
 
 export default List;
