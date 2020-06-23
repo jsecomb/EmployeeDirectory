@@ -1,8 +1,8 @@
 import React from "react";
 
 const ArticleContext = React.createContext({
-  title: "",
-  url: ""
+  title: "thing",
+  url: "thing"
 });
 
 export default ArticleContext;
