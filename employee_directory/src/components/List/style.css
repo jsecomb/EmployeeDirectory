@@ -1,33 +1,25 @@
-.list-overflow-container {
-  max-height: 545px;
-  border: 1px #DDDDDD solid;
-  border-radius: 4px;
-  overflow-y: scroll;
-  overflow-x: hidden;
+#dataRow {
+  background-color: lightgray;
+  width: 95%;
+  padding: 30px;
+  padding-left: 0px;
+  margin: 20px;
+  word-wrap: auto;
+  box-shadow: 4px 4px grey;
 }
 
-.list-overflow-container ul {
-  margin: 0;
+#credentials {
+  background-color: #3765b0;
+  box-shadow: 4px 4px orange;
+  padding: 15px;
+  color: whitesmoke;
 }
 
-.list-overflow-container li {
-  border-radius: 0px;
-  border-left: none;
-  border-right: none;
+p {
+  margin: 1.5px;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-.list-overflow-container li * {
-  cursor: pointer;
-}
-
-.list-overflow-container li a {
-  color: #2A878C;
-}
-
-.list-overflow-container li:first-child {
-  border-top: none;
-}
-
-.list-overflow-container li:last-child {
-  border-bottom: none;
+h5 {
+  font-family: Arial, Helvetica, sans-serif;
 }
