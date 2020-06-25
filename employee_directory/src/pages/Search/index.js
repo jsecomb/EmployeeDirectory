@@ -26,23 +26,23 @@ function Search() {
       .catch(err => console.log(err));
   }
 
-  function genderFilter(event){
-    setFilterSettings({...filterSettings, gender: event.target.name})
+  function genderFilter(event) {
+    setFilterSettings({...filterSettings, [event.target.name]: event.target.value})
     switch (filterSettings.age){
       case "all":
-        if (event.target.name === "all"){
+        if (event.target.value === "all"){
           setFilteredEmployees((employees.sort(function(a, b){return 0.5 - Math.random()})))
         }
         else{
-          setFilteredEmployees(employees.filter(emp => emp.gender === event.target.name))
+          setFilteredEmployees(employees.filter(emp => emp.gender === event.target.value))
         }
       break;
       case "ascending":
-        if (event.target.name === "all"){
+        if (event.target.value === "all"){
           setFilteredEmployees(employees.sort(function(a, b){return a.dob.age - b.dob.age}))
         }
         else{
-          setFilteredEmployees(employees.filter(emp => emp.gender === event.target.name).sort(function(a, b){return a.dob.age - b.dob.age}))
+          setFilteredEmployees(employees.filter(emp => emp.gender === event.target.value).sort(function(a, b){return a.dob.age - b.dob.age}))
         }
       break;
       default:
@@ -80,7 +80,7 @@ function Search() {
   }
 
   return (
-    <Container style={{ minHeight: "100vh" }}>
+    <Container style={{ marginTop: 35 }}>
       <SearchControls 
         genderFilter={genderFilter}
         ascending={ascending}/>

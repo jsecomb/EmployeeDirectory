@@ -2,6 +2,13 @@ import React from "react";
 import "./style.css";
 
 function List({ dataRows }) {
+  function replacePW(pw){
+    let hiddenPW = [];
+    for(let i=0; i<pw.length; i++){
+      hiddenPW.push("*");
+    }
+    return hiddenPW.join("").toString();
+  }
   return( 
     <>
     {dataRows.map(emp => (
@@ -18,9 +25,9 @@ function List({ dataRows }) {
         <div className="col-5">
           <div className="Container" id="credentials">
             <p><strong>Email:</strong> {emp.email}</p>
-            <p><strong>SSN:</strong> {emp.id.value}</p>
+            <p><strong>SSN:</strong> ***-**-{emp.id.value.substring(7,11)}</p>
             <p><strong>Username:</strong> {emp.login.username}</p>
-            <p><strong>Password:</strong> {emp.login.password}</p>
+            <p><strong>Password:</strong> {replacePW(emp.login.password)}</p>
           </div>
         </div>
       </div>

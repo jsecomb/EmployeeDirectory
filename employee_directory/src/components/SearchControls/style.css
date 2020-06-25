@@ -1,0 +1,40 @@
+#container {
+    background-color: lightgray;
+    width: 95%;
+    padding: 30px;
+    padding-left: 0px;
+    margin: 20px;
+    word-wrap: auto;
+    box-shadow: 4px 4px grey;
+  }
+  
+  .btn {
+    background-color: #3765b0;
+    box-shadow: 4px 4px orange;
+    padding: 15px;
+    color: whitesmoke;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  p {
+    margin: 1.5px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-weight: 600;
+    padding-bottom: 20px;
+  }
+  
+  h4 {
+    font-family: Arial, Helvetica, sans-serif;
+    padding-bottom: 20px;
+  }
+
+  #controlLabels, #controlBtns, #controlPanelL {
+    margin: auto;
+  }
+
+
