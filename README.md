@@ -6,7 +6,7 @@
 
 ## Description: 
 
-This is an Employee Directory App built with React. The user is able to access a directory of employee information and filter or sort the data according by gender and age. The project provided experience building React UI components, managaging state (including the use of State hooks rather than using class) and responding to user events.
+This is an Employee Directory App built with React. The user is able to access a directory of employee information and filter or sort the data by gender and age. The project provided experience building React UI components, managaging state (including the use of State hooks rather than using class) and responding to user events.
 
 ---
 
