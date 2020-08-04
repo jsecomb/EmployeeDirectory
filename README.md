@@ -1,4 +1,4 @@
-# Homework19 by Julian Secomb 
+# EmployeeDirectory by Julian Secomb 
 
 [![HitCount](http://hits.dwyl.com/{jsecomb}/{Homework19}.svg)](http://hits.dwyl.com/{jsecomb}/{Homework19})
 ![GitHub top language](https://img.shields.io/github/languages/top/jsecomb/Homework19?style=flat-square)
